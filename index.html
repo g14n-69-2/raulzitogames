@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Рayзитo Games USA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="terminal">
+        <div>Рayзитo Games USA.com</div>        
+        <div id="status">
+            <p>SALDO: $<span id="saldo">100</span></p>
+            <p>APOSTA: $<input type="number" id="aposta" value="10" min="1"></p>
+        </div>
+
+        <div>
+            <p id="carta_atual">CARTA ATUAL: [ ? ]</p>
+            <p id="mensagem">Insira a aposta e escolha se a próxima carta será MAIOR ou MENOR.</p>
+        </div>
+
+        <div class="acoes">
+            <button onclick="jogar('maior')">[ MAIOR ]</button>
+            <button onclick="jogar('menor')">[ MENOR ]</button>
+            <button onclick="resetar()">[ RESET ]</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
