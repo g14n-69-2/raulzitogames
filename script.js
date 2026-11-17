@@ -63,9 +63,7 @@ function jogar(escolha) {
     document.getElementById("carta_atual").innerText = `CARTA ATUAL: [ ${obterNomeCarta(cartaAtualValor)} ]`;
 
     if (saldo <= 0) {
-        document.getElementById("mensagem").innerText += " [FALIDO] Saldo zerado. O sistema injetou novos $100.";
-        saldo = 100;
-        document.getElementById("saldo").innerText = saldo;
+        document.getElementById("mensagem").innerText += " [FALIDO] Saldo zerado. Você perdeu tudo.";
     }
 }
 
